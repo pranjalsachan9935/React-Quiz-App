@@ -19,10 +19,10 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 450px;
+  width: 100%;
   text-align: center;
   background-color: #f7f7f7; 
-  padding: 40px;
+  padding: 8px;
   border-radius: 15px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
@@ -83,7 +83,6 @@ body {
 .quiz-content {
   background-color: #fff;
   padding: 20px;
-  width: 450px; 
   max-width: 100%; 
   height: fit-content;
   border-radius: 20px;
@@ -182,7 +181,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 35%;
+  width: 108px;
   word-break: break-word;
   border: 0;
 }
@@ -190,20 +189,25 @@ body {
 
 
 .results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
   font-size: 18px;
   color: #333;
+ 
   background-color: #f9f9f9; 
   padding: 20px;
   border-radius: 20px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  width: 450px;
   text-align: center;
-  margin-left: auto; 
-  margin-right: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+.result-inner-container{
+  width: 350px;
+}
 .results-container h2 {
   font-size: 30px;
   color: #2c3e50;
