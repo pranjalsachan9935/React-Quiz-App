@@ -84,6 +84,7 @@ function QuizApp() {
         </div>
       ) : showResults ? (
         <div className="results-container">
+          <div className="result-inner-container">
           <h2>Quiz Results</h2>
           <p>
             You scored {score} out of {questions.length}
@@ -113,6 +114,7 @@ function QuizApp() {
               
               ))}
             </ul>
+          </div>
           </div>
         </div>
       ) : (
